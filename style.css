@@ -38,7 +38,7 @@ body {
 }
 
 .navbar-toggler-icon {
-    background-image: url('/images/icon-hamburger.svg');
+    background-image: url('./images/icon-hamburger.svg');
 }
 
 nav ul {
