@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Main */
+.hero {
+    position: relative;
+}
+
+/* navbar */
+.navbar {
+    position: absolute;
+    z-index: 1;
+    padding: 1.6rem 2rem;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+}
+
+.navbar li a {
+    color: #fff;
+}
+
+.navbar .nav-item .active {
+    color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-image: url('/images/icon-hamburger.svg');
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 1.2rem;
+    font-weight: 500;
+    padding: 0;
+}
+
+/* mobile menu */
+.navbar-toggler {
+    border: none;
+    outline: 0;
+    margin-right: 22rem;
+    margin-top: -2.6rem;
+}
+
+.navbar-collapse {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: .2rem 4.1rem;
+}
+
+/*............................................ */
+
+.carousel-item {
+    position: relative
+}
+
+.carousel-caption {
+    width: 37.5rem;
+    height: 33.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    padding: 6.5rem;
+    flex-direction: column;
+    margin-left: 39.7rem;
+}
+
+.carousel-caption a {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: .6rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 5rem;
+    height: 5rem;
+    background: #000;
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-prev {
+    margin-left: 52.5rem;
+    margin-top: 28.4rem;
+    width: 5rem;
+}
+
+.carousel-control-next {
+    margin-right: 29.55rem;
+    margin-top: 28.4rem;
+    width: 5rem;
+}
+
+
+
+/* About Section */
+.about_section .row div {
+    position: relative;
+    height: 16.6875rem;
+    max-height: 100%;
+}
+
+.about_section .row .col-lg-3:first-child {
+    width: 454px;
+}
+
+.about_section .row .col-lg-3:first-child img {
+    width: 100%;
+    margin-left: -.8rem;
+}
+
+.about_section .row .col-lg-3:last-child {
+    width: 454px;
+}
+
+.about_section .row .col-lg-6 {
+    width: 564px;
+}
+
+.about_section .row .col-lg-6 h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .28rem;
+    text-transform: uppercase;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 720px) {
+    .navbar {
+        padding: 2rem 0;
+    }
+
+    .navbar-collapse {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background: #fff;
+        padding: 3rem 4.1rem;
+        margin-top: -4.6rem;
+        margin-left: -.7rem;
+    }
+
+
+
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .navbar .navbar-brand {
+        margin-left: 12rem;
+        color: #fff;
+        font-size: 1.4rem;
+        letter-spacing: .1rem;
+    }
+
+    .navbar ul li a,
+    .navbar .nav-item .active {
+        color: #000;
+    }
+
+    .about_section .row .col-lg-3:first-child,
+    .about_section .row .col-lg-3:last-child {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .about_section .row .col-lg-3:first-child img {
+        width: 445px;
+        margin: 0;
+    }
+
+    .about_section .row .col-lg-3:last-child img {
+        width: 445px;
+        margin: 0;
+    }
+
+
+    .about_section .row .col-lg-6 {
+        margin-bottom: 2rem;
+    }
+
+    .carousel-caption {
+        position: relative;
+        width: 100%;
+        padding: 3.2rem;
+        margin-left: -4rem;
+    }
+
+    .carousel-caption a {
+        margin-top: 2rem;
+    }
+
+    .carousel-control-prev {
+        width: 4.5rem;
+        height: 3.6rem;
+        margin-left: 18.774rem;
+        margin-top: 13.4rem;
+    }
+
+    .carousel-control-next {
+        width: 4.5rem;
+        height: 3.6rem;
+        margin-right: 0rem;
+        margin-top: 13.4rem;
+    }
+
+
+}
